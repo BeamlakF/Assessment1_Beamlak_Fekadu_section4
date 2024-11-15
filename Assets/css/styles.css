@@ -1,0 +1,106 @@
+header {
+    background-color: #d9eed9;  
+    color: #013401;              
+    text-align: center;
+    padding: 15px; 
+}
+body {
+    background-color: #f0e4d7;   
+    color: #3e3e3e;              
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+    margin: 0; 
+}
+nav ul {
+    display: flex;
+    flex-direction: column; 
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #4CAF50;             
+    font-size: 26px; 
+    margin: 10px 0; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 850; 
+}
+.product-list {
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+.product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #e6d6c5;   
+    border: 1px solid #ffffff;
+    padding: 15px; 
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #124314;   
+    color: #ffffff;              
+    padding: 15px; 
+    text-align: center; 
+    font-size: 14px; 
+}
+
+@media (min-width: 320px) {
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    nav a {
+        font-size: 18px; 
+        margin: 0 15px; 
+    }
+    .product-list {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .product {
+        padding: 16px; 
+    }
+    footer {
+        font-size: 16px; 
+    }
+}
+@media (min-width: 768px) {
+    #section1{
+        display: flex;
+        justify-content: space-around;
+    }
+    #section2{
+        display: flex;
+        justify-content: space-around;
+    }
+    #section3 {
+        display: flex;
+        justify-content: space-around; 
+    }
+    footer {
+        text-align: left; 
+        padding: 20px 30px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px; 
+    }
+
+    nav ul {
+        justify-content: space-evenly; 
+    }
+
+    .product img {
+        max-width: 80%; }
+}
